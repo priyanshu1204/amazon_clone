@@ -6,8 +6,7 @@ const authRouter = require('./routes/auth');
 const adminRouter = require('./routes/admin');
 const productRouter = require('./routes/product');
 const userRouter = require('./routes/user');
-require('dotenv').config();
-const DB = process.env.MONGODB_URI;
+const DB ="";
 
 const app = express();
 
