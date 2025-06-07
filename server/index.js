@@ -6,7 +6,8 @@ const authRouter = require('./routes/auth');
 const adminRouter = require('./routes/admin');
 const productRouter = require('./routes/product');
 const userRouter = require('./routes/user');
-const DB = "mongodb+srv://priyanshuraj:ashu6723@cluster0.dfase4n.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
+require('dotenv').config();
+const DB = process.env.MONGODB_URI;
 
 const app = express();
 
